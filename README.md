@@ -90,6 +90,8 @@ Fenced code blocks with github style
     */
     ```
 
+Output:
+
 ```html
 <pre><code class="language-markdown">/*
 Title: Welcome
