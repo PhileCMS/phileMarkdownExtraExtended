@@ -81,7 +81,7 @@ Output:
 Fenced code blocks with github style
 
 ```markdown
-```markdown
+\`\`\`markdown
 /*
 Title: Welcome
 Description: This description will go in the meta description tag
@@ -89,7 +89,7 @@ Author: Joe Bloggs
 Date: 2013/01/01
 Robots: noindex,nofollow
 */
-```
+\`\`\`
 ```
 
 ```html
