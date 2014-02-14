@@ -44,3 +44,61 @@ $config['plugins'] = array(
 ### Why Use?
 
 Check out the [project homepage](https://github.com/egil/php-markdown-extra-extended) to see the additional details.
+
+Noticeable differences:
+
+```markdown
+> (http://www.whatwg.org/) Content inside a blockquote must be quoted
+> from another source, whose address, if it has one,
+> may be cited in the `cite` attribute.
+
+===
+![phile image](content/images/Icon.png)
+===
+
+=== [A **happy face** is good for web developers]
+![phile image](content/images/Icon.png)
+===
+```
+
+Output:
+
+```html
+<blockquote cite="http://www.whatwg.org/">
+  <p>Content inside a blockquote must be quoted<br>
+  from another source, whose address, if it has one,<br>
+  may be cited in the <code>cite</code> attribute.</p>
+</blockquote>
+<figure>
+  <p><img src="content/images/Icon.png" alt="phile image"></p>
+</figure>
+<figure>
+<figcaption><p>A <strong>happy face</strong> is good for web developers</p></figcaption>
+  <p><img src="content/images/Icon.png" alt="phile image"></p>
+</figure>
+```
+
+Fenced code blocks with github style
+
+```markdown
+```markdown
+/*
+Title: Welcome
+Description: This description will go in the meta description tag
+Author: Joe Bloggs
+Date: 2013/01/01
+Robots: noindex,nofollow
+*/
+```
+```
+
+```html
+<pre><code class="language-markdown">/*
+Title: Welcome
+Description: This description will go in the meta description tag
+Author: Joe Bloggs
+Date: 2013/01/01
+Robots: noindex,nofollow
+*/
+</code></pre>
+```
