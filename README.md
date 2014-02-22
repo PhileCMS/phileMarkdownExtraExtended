@@ -18,7 +18,7 @@ Add dependency to your composer.json file and make sure you add the line about t
       "php": ">=5.3.0",
       "twig/twig": "1.15.*",
       "michelf/php-markdown": "1.3",
-      "egil/php-markdown-extra-extended": "dev-master",
+      "brainsware/php-markdown-extra-extended": "dev-master",
       "phile-cms/plugin-installer-plugin": "*"
   }
 }
