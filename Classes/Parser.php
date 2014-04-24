@@ -1,9 +1,10 @@
 <?php
-namespace Phile\Parser;
+namespace Phile\Plugin\Phile\MardownExtraExtended;
 
 use \egil\MarkdownExtended;
+use Phile\ServiceLocator\ParserInterface;
 
-class MarkdownExtraExtended implements ParserInterface {
+class Parser implements ParserInterface {
 	// overload parse with the MarkdownExtra parser
 	public function parse($data) {
 		return MarkdownExtended($data);

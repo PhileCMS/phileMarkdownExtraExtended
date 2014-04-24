@@ -1,0 +1,26 @@
+{
+	"name": "phile/markdown-extra-extended",
+	"type": "phile-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "description": "Markdown Extra Extended plugin for PhileCMS",
+    "homepage": "http://philecms.com",
+    "keywords": ["cms","phile","content"],
+    "authors": [
+        {
+            "name": "James Doyle",
+            "email": "james2doyle@gmail.com",
+            "homepage": "http://ohdoylerules.com/",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0",
+        "twig/twig": "1.15.*",
+        "michelf/php-markdown": "1.3",
+        "brainsware/php-markdown-extra-extended": "dev-master",
+        "phile-cms/phile": "1.0.0",
+        "phile-cms/plugin-installer-plugin": "1.0.0"
+	}
+}
