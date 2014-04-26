@@ -35,9 +35,9 @@ Modify your `config.php` file:
 ```php
 $config['plugins'] = array(
   // disable the default parser
-  'phileParserMarkdown' => array('active' => false),
+  'phile\\parserMarkdown' => array('active' => false),
   // enable the new parser
-  'phileParserMarkdownExtraExtended' => array('active' => true)
+  'phile\\markdownExtraExtended' => array('active' => true)
 );
 ```
 

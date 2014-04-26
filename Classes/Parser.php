@@ -1,5 +1,5 @@
 <?php
-namespace Phile\Plugin\Phile\MardownExtraExtended;
+namespace Phile\Plugin\Phile\MarkdownExtraExtended;
 
 use \egil\MarkdownExtended;
 use Phile\ServiceLocator\ParserInterface;
