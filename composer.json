@@ -20,7 +20,7 @@
         "twig/twig": "1.15.*",
         "michelf/php-markdown": "1.3",
         "brainsware/php-markdown-extra-extended": "dev-master",
-        "phile-cms/phile": "1.0.0",
-        "phile-cms/plugin-installer-plugin": "1.0.0"
+        "phile-cms/phile": ">=1",
+        "phile-cms/plugin-installer-plugin": ">=1"
 	}
 }
