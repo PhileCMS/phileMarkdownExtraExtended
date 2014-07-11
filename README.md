@@ -7,39 +7,24 @@ phileMarkdownExtraExtended
 
 This project has a few steps. So it is easier to install via the [zip download](https://github.com/PhileCMS/phileMarkdownExtraExtended/archive/master.zip).
 
-### Installation with Composer
+### 1.1 Installation (composer)
 
-Add dependency to your composer.json file and make sure you add the line about the `minimum-stability`:
+Add `"minimum-stability": "dev"` to your composer.json file. Then run the following:
 
-```json
-{
-  "minimum-stability": "dev",
-  "require": {
-      "php": ">=5.3.0",
-      "twig/twig": "1.15.*",
-      "michelf/php-markdown": "1.3",
-      "brainsware/php-markdown-extra-extended": "dev-master",
-      "phile-cms/plugin-installer-plugin": "*"
-  }
-}
+```
+php composer.phar require phile/markdown-extra-extended:dev-master
 ```
 
-Now run your `composer update` command as normal.
+### 1.2 Installation (Download)
 
-Move the `phileMarkdownExtraExtended` folder into your plugins directory.
+* Install [Phile](https://github.com/PhileCMS/Phile)
+* Clone or unzip this repo into `plugins/phile/markdownExtraExtended`
 
-Move the `MarkdownExtraExtended.php` file to `project_root/lib/Phile/Parser`. If you do not do this, nothing will work.
+### Activation
 
-Modify your `config.php` file:
+After you have installed the plugin. You need to add the following line to your `config.php` file:
 
-```php
-$config['plugins'] = array(
-  // disable the default parser
-  'phile\\parserMarkdown' => array('active' => false),
-  // enable the new parser
-  'phile\\markdownExtraExtended' => array('active' => true)
-);
-```
+* add `$config['plugins']['phile\\markdownExtraExtended'] = array('active' => true);` to your `config.php`
 
 ### Why Use?
 
